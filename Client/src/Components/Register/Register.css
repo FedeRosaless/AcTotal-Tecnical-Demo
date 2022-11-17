@@ -1,0 +1,112 @@
+.form h1 {
+    color: skyblue;
+    margin-left: -20px;
+}
+
+.error {
+    color: rgba(255, 0, 0, 0.473);
+    margin-top: -10px;
+}
+
+.form{
+    display: flex;
+    margin-left: 200px;
+    width: 300px;
+    margin-top: 32px;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.all{
+    display: inline-flex;
+}
+
+
+.inputs{
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 3px;
+}
+
+.AcTotal{
+    display: flex;
+    height: 100%;
+    width:150px;
+    margin-left: 570px;
+    margin-top: 50px;
+    margin-bottom: -40px;
+}
+
+.listHead{
+    color: skyblue;
+    font-family: Nunito;
+    margin-left: 170px;
+    width: 400px;
+    margin-top: 35px;
+}
+
+.dataList{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.cardsList{
+    border-left: 2px solid rgba(135, 207, 235, 0.815);
+    height: 515px;
+    margin-top:-10px;
+    overflow-y: scroll;
+    width: 600px;
+}
+
+.cardsList::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .cardsList::-webkit-scrollbar-track {
+    background: rgb(20, 24, 59);
+}
+  
+  .cardsList::-webkit-scrollbar-thumb {
+    background-color: skyblue;
+    border-radius: 20px;
+    border: 1px solid black;
+  }
+
+  @media (max-width: 900px){
+      .all{
+          display: flex; 
+          flex-direction: column;
+          width: 500px;
+          transform: scale(0.8);
+      }
+
+      .body{
+        width:500px;
+      }
+      
+      .form{
+        margin-left: 80px;
+        width: 300px;
+        gap: 20px;
+      }
+
+      .form h1 {
+        margin-left: 90px;
+      }
+
+      .buttonG{
+        height: 30px;
+        width: 70px
+      }
+
+
+      .AcTotal{
+          margin-left: 30px;
+          justify-content: left;
+      }
+
+      .cardsList{
+        border-left:none;
+      }
+  }
